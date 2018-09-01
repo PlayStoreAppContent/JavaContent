@@ -1,0 +1,14 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>
+		</title>
+		<style type="text/css">
+			.cs95E872D0{text-align:left;text-indent:0pt;margin:0pt 0pt 0pt 0pt}
+			.csAC91E297{color:#000000;background-color:#FFFFFF;font-family:Book Antiqua;font-size:14pt;font-weight:bold;font-style:normal;}
+			.cs57154F9C{color:#000000;background-color:transparent;font-family:Book Antiqua;font-size:12pt;font-weight:normal;font-style:normal;}
+		</style>
+	</head>
+	<body>
+		<p class="cs95E872D0"><span class="csAC91E297">Java - synchronized keyword</span></p><p class="cs95E872D0"><span class="cs57154F9C">&nbsp;</span></p><p class="cs95E872D0"><span class="cs57154F9C">Thread synchronization provides the tool for ensuring that different threads take proper turns when using shared resources.&nbsp;<br/><br/>Thread synchronization is important in a multithreaded program to maintain the consistency and durability of data that is accessed by different threads.&nbsp;<br/><br/>Multiple threads of a program run independently of one another. Each thread does not bother about the activities of other threads. When a thread works on its own and on separate data( i.e., not shard ), the data will not be in inconsistent state. The problem( due to inconsistency of data ) occurs when the same data is accessed( or shared ) by different threads.<br/><br/>When the threads act on shared data, timing is an important issue. By the process of synchronization, we an ensure only one thread can access the source at a time and other threads should wait in a queue until the first thread comes out after finishing its execution.&nbsp;<br/><br/>We use synchronized keyword to monitor the activities of different threads. We can use synchronized as an access modifier. The following method is synchronized :-</span></p><p class="cs95E872D0"><span class="cs57154F9C">&nbsp;</span></p><p class="cs95E872D0"><span class="cs57154F9C">public synchronized void update( int amount ) &nbsp;</span></p><p class="cs95E872D0"><span class="cs57154F9C">&nbsp;{</span></p><p class="cs95E872D0"><span class="cs57154F9C">	balance - = amount ;</span></p><p class="cs95E872D0"><span class="cs57154F9C">	</span></p><p class="cs95E872D0"><span class="cs57154F9C">}</span></p><p class="cs95E872D0"><span class="cs57154F9C">&nbsp; </span></p><p class="cs95E872D0"><span class="cs57154F9C">When a thread is accessing the above update( ) method, other thread is not allowed to access it.</span></p><p class="cs95E872D0"><span class="cs57154F9C">&nbsp;</span></p></body>
+</html>
